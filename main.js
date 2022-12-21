@@ -105,6 +105,7 @@ function resetVelocity(point, axis, dir) {
   if(axis == 'x') {
     point.vx = dir*Math.random();  
     vx2 = Math.pow(point.vx, 2);
+    
   // vy^2 = velocity^2 - vx^2
   vy2 = velocity2 - vx2;
   point.vy = Math.sqrt(vy2) * (Math.random()*2-1);
